@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main-content {
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.4);
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.company__info {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 15px 15px 15px;
+    color: #fff;
+    width: 50%; /* Adjust width as needed */
+}
+
+.fa-android {
+    font-size: 3em;
+}
+
+.company__logo {
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+}
+
+.login_form {
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 70px solid #fff;
+    border-right: 1px solid #ccc;
+    flex: 1;
+    padding: 0 15px; /* Add padding to maintain spacing */
+}
+
+.login-heading {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    padding: 0 2em;
+}
+
+.form__input {
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 1em .5em .5em;
+    padding-left: 2em;
+    outline: none;
+    margin: 1.5em auto;
+    transition: all .5s ease;
+}
+
+.form__input:focus {
+    border-bottom-color: #C10230;
+    box-shadow: 0 0 5px rgba(0,80,80,.4); 
+    border-radius: 4px;
+}
+
+.btn {
+    transition: all .5s ease;
+    width: 70%;
+    border-radius: 30px;
+    color: #C10230;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #C10230;
+    margin-top: 1.5em;
+    margin: 1.5em auto; /* Adjust margin to center the button */
+    display: block; 
+}
+
+.btn:hover, .btn:focus {
+    background-color: #C10230;
+    color: #fff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .company__info, .login_form {
+        width: 100%; /* Make both sections full width */
+        border-radius: 20px;
+        margin: 2em auto;
+        border-top: none;
+    }
+
+    .company__info {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .login_form {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
